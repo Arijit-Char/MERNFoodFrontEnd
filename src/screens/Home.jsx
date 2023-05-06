@@ -13,7 +13,7 @@ function Home() {
   const [s, sets] = useState([]); //in array we can use map
 
   const loadData = async () => {
-    let response = await fetch("https://mernappbackend-zg6i.onrender.com/api/foodData", {
+    let response = await fetch("https://mernappbackend-wg5z.onrender.com/api/foodData", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

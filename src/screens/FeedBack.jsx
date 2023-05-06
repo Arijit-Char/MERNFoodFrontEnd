@@ -3,7 +3,7 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link, useNavigate } from "react-router-dom";
-
+require("dotenv").config();
 export default function FeedBack() {
   const [data, setData] = useState({
     name: "",
@@ -12,7 +12,7 @@ export default function FeedBack() {
   let navigate = useNavigate();
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const response = await fetch("https://mernappbackend-zg6i.onrender.com/api/feedbackuser", {
+    const response = await fetch("https://mernappbackend-wg5z.onrender.com/api/feedbackuser", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

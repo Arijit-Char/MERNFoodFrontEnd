@@ -13,7 +13,7 @@ export default function Login() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const response = await fetch("https://mernappbackend-zg6i.onrender.com/api/loginuser", {
+    const response = await fetch("https://mernappbackend-wg5z.onrender.com/api/loginuser", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

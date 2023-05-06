@@ -14,7 +14,7 @@ function SignUp() {
   let navigate = useNavigate();
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const response = await fetch("https://mernappbackend-zg6i.onrender.com/api/creatuser", {
+    const response = await fetch("https://mernappbackend-wg5z.onrender.com/api/creatuser", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
